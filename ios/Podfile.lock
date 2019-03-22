@@ -1,0 +1,93 @@
+PODS:
+  - JKBigInteger2 (0.0.5)
+  - QBImagePickerController (3.4.0)
+  - React (0.58.4):
+    - React/Core (= 0.58.4)
+  - react-native-document-picker (2.3.0):
+    - React
+  - React/Core (0.58.4):
+    - yoga (= 0.58.4.React)
+  - React/fishhook (0.58.4)
+  - React/RCTActionSheet (0.58.4):
+    - React/Core
+  - React/RCTAnimation (0.58.4):
+    - React/Core
+  - React/RCTBlob (0.58.4):
+    - React/Core
+  - React/RCTGeolocation (0.58.4):
+    - React/Core
+  - React/RCTImage (0.58.4):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.58.4):
+    - React/Core
+  - React/RCTNetwork (0.58.4):
+    - React/Core
+  - React/RCTSettings (0.58.4):
+    - React/Core
+  - React/RCTText (0.58.4):
+    - React/Core
+  - React/RCTVibration (0.58.4):
+    - React/Core
+  - React/RCTWebSocket (0.58.4):
+    - React/Core
+    - React/fishhook
+    - React/RCTBlob
+  - RNAWSCognito (3.0.7):
+    - JKBigInteger2 (= 0.0.5)
+    - React
+  - RNImageCropPicker (0.22.0):
+    - QBImagePickerController
+    - React/Core
+    - RSKImageCropper
+  - RSKImageCropper (2.2.1)
+  - yoga (0.58.4.React)
+
+DEPENDENCIES:
+  - react-native-document-picker (from `../node_modules/react-native-document-picker`)
+  - React/Core (from `../node_modules/react-native`)
+  - React/RCTActionSheet (from `../node_modules/react-native`)
+  - React/RCTAnimation (from `../node_modules/react-native`)
+  - React/RCTGeolocation (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTLinkingIOS (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTSettings (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTVibration (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+  - RNAWSCognito (from `../node_modules/amazon-cognito-identity-js`)
+  - RNImageCropPicker (from `../node_modules/react-native-image-crop-picker`)
+  - yoga (from `../node_modules/react-native/ReactCommon/yoga/yoga.podspec`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JKBigInteger2
+    - QBImagePickerController
+    - RSKImageCropper
+
+EXTERNAL SOURCES:
+  React:
+    :path: "../node_modules/react-native"
+  react-native-document-picker:
+    :path: "../node_modules/react-native-document-picker"
+  RNAWSCognito:
+    :path: "../node_modules/amazon-cognito-identity-js"
+  RNImageCropPicker:
+    :path: "../node_modules/react-native-image-crop-picker"
+  yoga:
+    :path: "../node_modules/react-native/ReactCommon/yoga/yoga.podspec"
+
+SPEC CHECKSUMS:
+  JKBigInteger2: e91672035c42328c48b7dd015b66812ddf40ca9b
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  React: 6b36b9732ee830d06b470dc4ecdd6837718abe63
+  react-native-document-picker: 8508bfda34be6c24a2cbecbe515b15108658c183
+  RNAWSCognito: 75dcde032f9bf12958d1c075f1afed6a37e02835
+  RNImageCropPicker: 30e7a6743d4dfe30b8cd00b35a90043945abd73a
+  RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
+  yoga: a767b95565bc4e939c7bf241a872cc29bad2f984
+
+PODFILE CHECKSUM: f4b628fc6f5913ca6bdee5477750eea68b657e9a
+
+COCOAPODS: 1.6.0
