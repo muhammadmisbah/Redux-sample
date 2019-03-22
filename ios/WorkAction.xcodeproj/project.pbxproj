@@ -347,6 +347,20 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = RNGestureHandler;
 		};
+		996F3D1F22414677000D67CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = WorkAction;
+		};
+		99855F7022413E6B0060E2A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 016E5DB3E24D4EB7A73899B0 /* RNGestureHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5C32A36220C603B000FFB8D;
+			remoteInfo = "RNGestureHandler-tvOS";
+		};
 		ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
@@ -757,6 +771,7 @@
 			isa = PBXGroup;
 			children = (
 				848F8FDA2211CA720056FF19 /* libRNGestureHandler.a */,
+				99855F7122413E6B0060E2A0 /* libRNGestureHandler-tvOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -844,6 +859,7 @@
 			);
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
+				996F3D2022414677000D67CC /* PBXTargetDependency */,
 			);
 			name = "WorkAction-tvOSTests";
 			productName = "WorkAction-tvOSTests";
@@ -861,11 +877,12 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = STK6NGLA38;
+						DevelopmentTeam = 4F45CY74FV;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = SUBZ24DP5B;
+						DevelopmentTeam = 4F45CY74FV;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -874,14 +891,14 @@
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = STK6NGLA38;
+						DevelopmentTeam = 4F45CY74FV;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E48F1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = STK6NGLA38;
+						DevelopmentTeam = 4F45CY74FV;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 				};
 			};
@@ -1220,6 +1237,13 @@
 			remoteRef = 848F8FD92211CA720056FF19 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		99855F7122413E6B0060E2A0 /* libRNGestureHandler-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNGestureHandler-tvOS.a";
+			remoteRef = 99855F7022413E6B0060E2A0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1480,6 +1504,11 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* WorkAction-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		996F3D2022414677000D67CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* WorkAction */;
+			targetProxy = 996F3D1F22414677000D67CC /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1500,7 +1529,7 @@
 			baseConfigurationReference = F382E16835E3713E4DC668EE /* Pods-WorkActionTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = STK6NGLA38;
+				DEVELOPMENT_TEAM = 4F45CY74FV;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1530,7 +1559,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = STK6NGLA38;
+				DEVELOPMENT_TEAM = 4F45CY74FV;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-image-crop-pickerios/**",
@@ -1555,9 +1584,11 @@
 			baseConfigurationReference = D5F8212D23CC00F23F6EAECA /* Pods-WorkAction.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				DEVELOPMENT_TEAM = 4F45CY74FV;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-image-crop-pickerios/**",
@@ -1570,8 +1601,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.WorkAction;
+				PRODUCT_BUNDLE_IDENTIFIER = com.workaction.facetone;
 				PRODUCT_NAME = WorkAction;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1582,8 +1614,10 @@
 			baseConfigurationReference = D2302C66E12FBC10DFEFEA69 /* Pods-WorkAction.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				DEVELOPMENT_TEAM = 4F45CY74FV;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)..\node_modules\neact-native-image-crop-pickerios/**",
@@ -1596,8 +1630,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.WorkAction;
+				PRODUCT_BUNDLE_IDENTIFIER = com.workaction.facetone;
 				PRODUCT_NAME = WorkAction;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1614,7 +1649,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = STK6NGLA38;
+				DEVELOPMENT_TEAM = 4F45CY74FV;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1649,7 +1684,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = STK6NGLA38;
+				DEVELOPMENT_TEAM = 4F45CY74FV;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1681,7 +1716,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = STK6NGLA38;
+				DEVELOPMENT_TEAM = 4F45CY74FV;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1699,7 +1734,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.WorkAction-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkAction-tvOS.app/WorkAction-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkAction.app/WorkAction";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -1715,7 +1750,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = STK6NGLA38;
+				DEVELOPMENT_TEAM = 4F45CY74FV;
 				GCC_NO_COMMON_BLOCKS = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1732,7 +1767,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.WorkAction-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkAction-tvOS.app/WorkAction-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkAction.app/WorkAction";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
