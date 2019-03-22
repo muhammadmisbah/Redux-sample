@@ -12,10 +12,7 @@
     "react-redux": "^6.0.0",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
-    "react-native-document-picker": "^2.3.0",
-    "react-native-gesture-handler": "^1.0.15",
-    "react-native-image-crop-picker": "^0.22.0"
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "babel-core": "7.0.0-bridge.0",
