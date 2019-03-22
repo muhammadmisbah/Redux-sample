@@ -10,7 +10,7 @@ class App extends Component {
       <View style={{ flex: 1 }}>
         <View style={{ flex: 0.8, justifyContent: "center", alignItems: "center" }}>
           <View style={{ padding: text ? 20 : 0, backgroundColor: text.toLowerCase(), }}>
-            <Text style={{ color: "#fff", backgroundColor: "#000" }}>{text}</Text>
+            <Text style={{ color: "#fff" }}>{text}</Text>
           </View>
         </View>
         <View style={{ flex: 0.2, width: "100%", flexDirection: "row", alignContent: "space-around", justifyContent: 'space-evenly', flexWrap: "wrap" }}>
