@@ -7,9 +7,9 @@ class App extends Component {
   render() {
     const text = this.props.Text, Buttons = this.props.Buttons;
     return (
-      <View style={{ flex: 1, backgroundColor: text.toLowerCase(), }}>
+      <View style={{ flex: 1 }}>
         <View style={{ flex: 0.8, justifyContent: "center", alignItems: "center" }}>
-          <View style={{ padding: text ? 5 : 0, backgroundColor: "#000", }}>
+          <View style={{ padding: text ? 20 : 0, backgroundColor: text.toLowerCase(), }}>
             <Text style={{ color: "#fff" }}>{text}</Text>
           </View>
         </View>
